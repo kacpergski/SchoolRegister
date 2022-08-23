@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 
 namespace SchoolRegisterApp
+//dzień 5
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var student = new Student();
-            
+            var student = new Student("Kacper");
+
             //var grades = new [] {4.2, 5.0, 3.0};
             var gradesList = new List<double>(){4.2, 5.0, 3.0};
             double gradesSum = 0;
