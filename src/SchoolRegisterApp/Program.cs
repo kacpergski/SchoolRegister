@@ -16,7 +16,8 @@ namespace SchoolRegisterApp
                 Console.WriteLine(grade);
                 
             }
-            Console.WriteLine($"Sum of grades: {gradesSum}");
+           // average /= gradesList.Count;
+            Console.WriteLine($"Sum of grades: {gradesSum:N2}");
         }
     }
 }
