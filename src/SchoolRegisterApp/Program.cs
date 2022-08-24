@@ -15,6 +15,9 @@ namespace SchoolRegisterApp
             var gradesList = new List<double>(){4.2, 5.0, 3.0};
             double gradesSum = 0;
             var average = 0.0;
+            double MinGrade = double.MaxValue;
+            double MaxGrade = double.MinValue;
+
             foreach(var grade in gradesList)
             {
                 gradesSum += grade;
