@@ -15,5 +15,11 @@ namespace SchoolRegisterApp
         {
         this.grades.Add(grade);
         }
+
+        public void ShowStatistic()
+        {
+
+            
+        }
     }
 }
