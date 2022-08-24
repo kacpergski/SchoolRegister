@@ -9,6 +9,7 @@ namespace SchoolRegisterApp
         static void Main(string[] args)
         {
             var student = new Student("Kacper");
+            student.AddGrade(5.0);
 
             //var grades = new [] {4.2, 5.0, 3.0};
             var gradesList = new List<double>(){4.2, 5.0, 3.0};
