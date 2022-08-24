@@ -18,19 +18,23 @@ namespace SchoolRegisterApp
         this.gradesList.Add(grade);
         }
 
-        public void ShowStatistic()
+        public Statistic GetStatistic()
         { 
-            double minGrade = double.MaxValue;
-            double maxGrade = double.MinValue;
+            var studentStatistic = new Statistic();
+
+            studentStatistic.minGrade = double.MaxValue;
+            studentStatistic.maxGrade = double.MinValue;
 
             foreach (var grade in gradesList)
             {
-                minGrade = Math.Min(minGrade, grade);
-                maxGrade = Math.Max(maxGrade, grade);
+                studentStatistic.minGrade = Math.Min(studentStatistic.minGrade, grade);
+                studentStatistic.maxGrade = Math.Max(studentStatistic.maxGrade, grade);
             }
 
-            Console.WriteLine($"Minimal garde: {minGrade:N2}");
-            Console.WriteLine($"Maximal grade: {maxGrade:N2}");
+            return studentStatistic;
+
+            //Console.WriteLine($"Minimal garde: {studentStatistic.minGrade:N2}");
+            //Console.WriteLine($"Maximal grade: {maxGrade:N2}");
         }
 
         

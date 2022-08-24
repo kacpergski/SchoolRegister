@@ -10,7 +10,8 @@ namespace SchoolRegisterApp
         {
             var student = new Student("Kacper");
             student.AddGrade(6.0);
-            student.ShowStatistic();
+           var stat =  student.GetStatistic();
+          //  student.ShowStatistic();
             //var grades = new [] {4.2, 5.0, 3.0};
            // var gradesList = new List<double>(){4.2, 5.0, 3.0};
            // double gradesSum = 0;
