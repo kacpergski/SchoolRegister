@@ -5,12 +5,16 @@ public class UnitTest1
     [Fact]
     public void Test1()
     {
+//arange
+var a = 4;
+var b = 5;
+var excepted = 9;
 
-        //arange
+//act
+var result = a + b;  
 
-        //act
-
-        //assert
+//assert
+ Assert.Equal(excepted,result);
 
     }
 }
