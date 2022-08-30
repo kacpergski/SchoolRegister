@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02FFC598-D838-4A29-B654-7E3F48FE5ECF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolRegisterApp", "src\SchoolRegisterApp\SchoolRegisterApp.csproj", "{55C18586-E141-461A-AE8A-A0790146D489}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{9A27ED45-E0AB-4F3D-B03F-87354A11A673}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolRegister.Test", "test\SchoolRegister.Test\SchoolRegister.Test.csproj", "{A5EA5A29-A5BE-4002-80FA-0F175B852224}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55C18586-E141-461A-AE8A-A0790146D489}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55C18586-E141-461A-AE8A-A0790146D489}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55C18586-E141-461A-AE8A-A0790146D489}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55C18586-E141-461A-AE8A-A0790146D489}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5EA5A29-A5BE-4002-80FA-0F175B852224}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5EA5A29-A5BE-4002-80FA-0F175B852224}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5EA5A29-A5BE-4002-80FA-0F175B852224}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5EA5A29-A5BE-4002-80FA-0F175B852224}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{55C18586-E141-461A-AE8A-A0790146D489} = {02FFC598-D838-4A29-B654-7E3F48FE5ECF}
+		{A5EA5A29-A5BE-4002-80FA-0F175B852224} = {9A27ED45-E0AB-4F3D-B03F-87354A11A673}
+	EndGlobalSection
+EndGlobal
