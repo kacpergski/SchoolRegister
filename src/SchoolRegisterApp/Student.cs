@@ -6,7 +6,7 @@ namespace SchoolRegisterApp
     public class Student
     { 
         private string name;  //pole prywatne do przechowywania imion
-        private List<double> gradesList = new List<double>(){4.2, 5.0, 3.0};
+        private List<double> gradesList = new List<double>(){};
 
         public Student(string name)
         {
@@ -20,6 +20,7 @@ namespace SchoolRegisterApp
 
         public Statistic GetStatistic()
         { 
+            double gradeSum = 0;
             var studentStatistic = new Statistic();
 
             studentStatistic.minGrade = double.MaxValue;
@@ -27,9 +28,16 @@ namespace SchoolRegisterApp
 
             foreach (var grade in gradesList)
             {
+                
+                gradeSum += grade;
+
                 studentStatistic.minGrade = Math.Min(studentStatistic.minGrade, grade);
                 studentStatistic.maxGrade = Math.Max(studentStatistic.maxGrade, grade);
+
+                
             }
+
+                studentStatistic.average = (gradeSum/gradesList.Count);
 
             return studentStatistic;
 

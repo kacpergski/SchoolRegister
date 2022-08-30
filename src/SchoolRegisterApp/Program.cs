@@ -9,7 +9,7 @@ namespace SchoolRegisterApp
         static void Main(string[] args)
         {
             var student = new Student("Kacper");
-            student.AddGrade(6.0);
+          //  student.AddGrade(6.0);
            var stat =  student.GetStatistic();
           //  student.ShowStatistic();
             //var grades = new [] {4.2, 5.0, 3.0};
