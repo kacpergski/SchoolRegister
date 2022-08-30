@@ -1,0 +1,10 @@
+dzień 8
+Przygotuj swoją własną solucję z projektem głównym i testowym
+Zbuduj kilka projektów jednocześnie z użyciem solucji
+Uruchom wszystkie testy z poziomu solucji
+Napisz testy z lekcji dotyczące porównania referencji Twoje własnej klasy z użyciem Same, NotSame, Object.ReferenceEquals oraz extension method .Equals() (np. employee.Equals(…);)
+
+dzien 9
+Wszystkie cechy ucznia, które powinny być publiczne wystaw w postaci getter’ów i setter’ów. Przypilnuj, które z nich powinny mieć publiczny 'seter’
+Upewnij się, że Twoja aplikacja zawiera wszystkie dotychczasowe zadania domowe.
+W razie pytań pisz na grupie

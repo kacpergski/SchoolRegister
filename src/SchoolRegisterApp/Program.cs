@@ -1,6 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 
+//Napisz testy z lekcji dotyczące porównania referencji
+// Twoje własnej klasy z użyciem Same, NotSame, Object.ReferenceEquals oraz extension method .Equals() 
+//(np. employee.Equals(…);)
+
+
 namespace SchoolRegisterApp
 //dzień 5
 {
