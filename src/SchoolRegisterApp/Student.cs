@@ -13,10 +13,21 @@ namespace SchoolRegisterApp
             this.name = name; // słowo this aby odwołać sie do klasy i przypisac name z konstruktora (to co w nawiasie) do pola name
         }
 
+        public string Name
+        {
+            get
+            {
+                return this.name;
+            }
+        }
+        
+
         public void AddGrade(double grade)
         {
         this.gradesList.Add(grade);
         }
+    
+      
 
         public Statistic GetStatistic()
         { 
