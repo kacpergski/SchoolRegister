@@ -24,8 +24,31 @@ namespace SchoolRegisterApp
               
         public void AddGrade(double grade)
         {
-        this.gradesList.Add(grade);
+           
+            if (grade >= 2.0 && grade <= 6.0)
+            {
+              
+            this.gradesList.Add(grade);
+              
+            }
+        else
+            {
+               Console.WriteLine("Wrong grade"); 
+            }
+        }        
+         public void AddGrade(string Sgrade)
+        {
+            int result;
+            int.TryParse(Sgrade, out result);
+            this.gradesList.Add(result);
         }
+
+          
+              
+            
+      
+        
+    
     
       
 
