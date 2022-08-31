@@ -16,6 +16,7 @@ namespace SchoolRegisterApp
             var student = new Student("Kacper");
             student.AddGrade(6.0);
             student.AddGrade("4");
+            student.ChangeName(ref student, "Ewa");
 
            var stat =  student.GetStatistic();
           //  student.ShowStatistic();

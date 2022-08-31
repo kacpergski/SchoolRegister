@@ -43,6 +43,11 @@ namespace SchoolRegisterApp
             this.gradesList.Add(result);
         }
 
+        public void ChangeName(ref Student student, string name)
+        {
+         student.Name = name;
+        }
+
           
               
             
