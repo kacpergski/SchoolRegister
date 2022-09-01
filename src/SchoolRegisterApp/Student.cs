@@ -26,7 +26,7 @@ namespace SchoolRegisterApp
         public void AddGrade(double grade)
         {
            
-            if (grade >= 2.0 && grade <= 6.0)
+            if (grade >= 1.0 && grade <= 6.0)
             {
               
             this.gradesList.Add(grade);
@@ -39,9 +39,51 @@ namespace SchoolRegisterApp
         }        
          public void AddGrade(string Sgrade)
         {
+             switch(Sgrade)
+                 {
+                      case "1+":
+                      student.AddGrade(1.5);
+                      break;
+                      case "2+":
+                      student.AddGrade(2.5);
+                      break;
+                      case "3+":
+                      student.AddGrade(3.5);
+                      break;
+                      case "4+":
+                      student.AddGrade(4.5);
+                      break;
+                      case "5+":
+                      student.AddGrade(5.5);
+                      break;
+                      case "2-":
+                      student.AddGrade(1.75);
+                      break;
+                      case "3-":
+                      student.AddGrade(2.75);
+                      break;
+                      case "4-":
+                      student.AddGrade(3.75);
+                      break;
+                      case "5-":
+                      student.AddGrade(4.75);
+                      break;
+                      case "6-":
+                      student.AddGrade(5.75);
+                      break;
+
+                      default:
+                       var grade = double.Parse(Sgrade);
+                      this.gradesList.Add(Sgrade);
+                      //case "q":
+                      
+                      break;
+
+
+
             int result;
             int.TryParse(Sgrade, out result);
-            this.gradesList.Add(result);
+            
         }
 
         public void ChangeName(ref Student student, string name)
@@ -100,8 +142,7 @@ namespace SchoolRegisterApp
 
             return studentStatistic;
 
-            //Console.WriteLine($"Minimal garde: {studentStatistic.minGrade:N2}");
-            //Console.WriteLine($"Maximal grade: {maxGrade:N2}");
+           
         }
 
         

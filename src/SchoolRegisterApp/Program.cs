@@ -16,18 +16,64 @@ namespace SchoolRegisterApp
             var student = new Student("Kacper");
             while (true)
             {
-                string aaa = student.Name;
-                 Console.WriteLine($"Hello enter grade for {aaa}");
-                 Console.WriteLine($"{aaa}");
-                
+                 Console.WriteLine($"Input 9 for exit");
+                 Console.WriteLine($"Hello enter grade for {student.Name}");
+                              
                  var input = Console.ReadLine();
-                 if (input == "q")
+                  student.AddGrade(input);
+                //  switch(input)
+                //  {
+                //       case "1+":
+                //       student.AddGrade(1.5);
+                //       break;
+                //       case "2+":
+                //       student.AddGrade(2.5);
+                //       break;
+                //       case "3+":
+                //       student.AddGrade(3.5);
+                //       break;
+                //       case "4+":
+                //       student.AddGrade(4.5);
+                //       break;
+                //       case "5+":
+                //       student.AddGrade(5.5);
+                //       break;
+                //       case "2-":
+                //       student.AddGrade(1.75);
+                //       break;
+                //       case "3-":
+                //       student.AddGrade(2.75);
+                //       break;
+                //       case "4-":
+                //       student.AddGrade(3.75);
+                //       break;
+                //       case "5-":
+                //       student.AddGrade(4.75);
+                //       break;
+                //       case "6-":
+                //       student.AddGrade(5.75);
+                //       break;
+
+                //       default:
+                //        var grade = double.Parse(input);
+                //       student.AddGrade(grade);
+                //       //case "q":
+                      
+                //       break;
+
+                              
+                 if (input == "9")
                  {
                     break;
                  }
 
-               var grade = double.Parse(input);
-            }
+              
+            }              
+               var stat = student.GetStatistic();
+               Console.WriteLine($"Minimal garde: {stat.minGrade:N2}");
+               Console.WriteLine($"Maximal grade: {stat.maxGrade:N2}");
+               Console.WriteLine($"Average grade: {stat.average:N2}");
+            
 
            // student.AddGrade(6.0);
            // student.AddGrade("4");
