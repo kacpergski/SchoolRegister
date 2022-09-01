@@ -14,11 +14,26 @@ namespace SchoolRegisterApp
         static void Main(string[] args)
         {
             var student = new Student("Kacper");
-            student.AddGrade(6.0);
-            student.AddGrade("4");
-            student.ChangeName(ref student, "Ewa");
+            while (true)
+            {
+                string aaa = student.Name;
+                 Console.WriteLine($"Hello enter grade for {aaa}");
+                 Console.WriteLine($"{aaa}");
+                
+                 var input = Console.ReadLine();
+                 if (input == "q")
+                 {
+                    break;
+                 }
+
+               var grade = double.Parse(input);
+            }
+
+           // student.AddGrade(6.0);
+           // student.AddGrade("4");
+           // student.ChangeName(ref student, "Ewa");
             
-           var stat =  student.GetStatistic();
+           //var stat =  student.GetStatistic();
           //  student.ShowStatistic();
             //var grades = new [] {4.2, 5.0, 3.0};
            // var gradesList = new List<double>(){4.2, 5.0, 3.0};
@@ -37,14 +52,14 @@ namespace SchoolRegisterApp
          //   }
 
                  //zadanie domwe 11
-        var ageList =  new List<int>(){10,20,30,40};
-        var nameList = new List<string>(){"Kacper","Tomek","Marek","Pawel"};
+        //var ageList =  new List<int>(){10,20,30,40};
+       // var nameList = new List<string>(){"Kacper","Tomek","Marek","Pawel"};
 
      
-            for (int i = 0; i < ageList.Count; i++)
-            {
-                Console.WriteLine($"{nameList[i]} {ageList[i]}"); 
-            }
+          //  for (int i = 0; i < ageList.Count; i++)
+          //  {
+          //      Console.WriteLine($"{nameList[i]} {ageList[i]}"); 
+          //  }
 
 
 
