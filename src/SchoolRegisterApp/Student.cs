@@ -37,53 +37,50 @@ namespace SchoolRegisterApp
                Console.WriteLine("Wrong grade"); 
             }
         }        
-         public void AddGrade(string Sgrade)
+         public void AddGrade(string grade)
         {
-             switch(Sgrade)
+             switch(grade)
                  {
                       case "1+":
-                      student.AddGrade(1.5);
+                      this.gradesList.Add(1.5);
                       break;
                       case "2+":
-                      student.AddGrade(2.5);
+                      this.gradesList.Add(2.5);
                       break;
                       case "3+":
-                      student.AddGrade(3.5);
+                      this.gradesList.Add(3.5);
                       break;
                       case "4+":
-                      student.AddGrade(4.5);
+                      this.gradesList.Add(4.5);
                       break;
                       case "5+":
-                      student.AddGrade(5.5);
+                      this.gradesList.Add(5.5);
                       break;
                       case "2-":
-                      student.AddGrade(1.75);
+                      this.gradesList.Add(1.75);
                       break;
                       case "3-":
-                      student.AddGrade(2.75);
+                      this.gradesList.Add(2.75);
                       break;
                       case "4-":
-                      student.AddGrade(3.75);
+                      this.gradesList.Add(3.75);
                       break;
                       case "5-":
-                      student.AddGrade(4.75);
+                      this.gradesList.Add(4.75);
                       break;
                       case "6-":
-                      student.AddGrade(5.75);
+                      this.gradesList.Add(5.75);
                       break;
 
                       default:
-                       var grade = double.Parse(Sgrade);
-                      this.gradesList.Add(Sgrade);
-                      //case "q":
-                      
-                      break;
+                      var Sgrade = double.Parse(grade);
+                      this.gradesList.Add(Sgrade); 
+                      break;      
 
-
-
-            int result;
-            int.TryParse(Sgrade, out result);
+           // int result;
+          //  int.TryParse(Sgrade, out result);
             
+        }
         }
 
         public void ChangeName(ref Student student, string name)
