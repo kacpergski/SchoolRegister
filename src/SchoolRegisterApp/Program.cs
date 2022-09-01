@@ -17,7 +17,7 @@ namespace SchoolRegisterApp
             student.AddGrade(6.0);
             student.AddGrade("4");
             student.ChangeName(ref student, "Ewa");
-
+            
            var stat =  student.GetStatistic();
           //  student.ShowStatistic();
             //var grades = new [] {4.2, 5.0, 3.0};
@@ -35,6 +35,20 @@ namespace SchoolRegisterApp
           //      Console.WriteLine(grade);
                 
          //   }
+
+                 //zadanie domwe 11
+        var ageList =  new List<int>(){10,20,30,40};
+        var nameList = new List<string>(){"Kacper","Tomek","Marek","Pawel"};
+
+     
+            for (int i = 0; i < ageList.Count; i++)
+            {
+                Console.WriteLine($"{nameList[i]} {ageList[i]}"); 
+            }
+
+
+
+     
         }   
     }
 }

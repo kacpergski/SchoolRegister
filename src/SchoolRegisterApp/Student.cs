@@ -7,6 +7,7 @@ namespace SchoolRegisterApp
     { 
         private string name;  //pole prywatne do przechowywania imion
         private List<double> gradesList = new List<double>(){};
+        
 
         public Student(string name)
         {
@@ -60,6 +61,12 @@ namespace SchoolRegisterApp
 
          student.Name = name;
         }
+
+
+       
+   
+
+        
 
           
               
