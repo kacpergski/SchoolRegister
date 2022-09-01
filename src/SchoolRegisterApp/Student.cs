@@ -45,6 +45,19 @@ namespace SchoolRegisterApp
 
         public void ChangeName(ref Student student, string name)
         {
+        
+          foreach (var ch in name)
+          {
+             if (char.IsDigit(ch) == false)
+             {
+                continue;
+             }
+             else
+             {
+                Console.WriteLine("Digit in name");
+             }      
+           }
+
          student.Name = name;
         }
 

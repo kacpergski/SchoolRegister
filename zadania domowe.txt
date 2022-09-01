@@ -90,4 +90,6 @@ Weź udział w Certyfikacji!
 
 dzien 21
 
+referncja wskazuje miejsce w pamieci stworzenie obiektu nowego obiektu czy tez podmienienie z tą samą referencją wskarze nowe miejsce w pamieci dla tej referencji o tej samej nazwie
+
 
