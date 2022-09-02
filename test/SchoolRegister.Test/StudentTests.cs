@@ -9,9 +9,9 @@ public class StudentTests
     {
 //arange
 var student1 = new Student("Kacper");
-student1.AddGrade(4.5);
-student1.AddGrade(3.0);
-student1.AddGrade(5.5);
+student1.AddGrade("4");
+student1.AddGrade("3");
+student1.AddGrade("5");
 student1.AddGrade("5");
 
 // var a = 4;

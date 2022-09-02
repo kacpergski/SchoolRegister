@@ -19,54 +19,14 @@ namespace SchoolRegisterApp
                  Console.WriteLine($"Input 9 for exit");
                  Console.WriteLine($"Hello enter grade for {student.Name}");
                               
-                 var input = Console.ReadLine();
-                  student.AddGrade(input);
-                //  switch(input)
-                //  {
-                //       case "1+":
-                //       student.AddGrade(1.5);
-                //       break;
-                //       case "2+":
-                //       student.AddGrade(2.5);
-                //       break;
-                //       case "3+":
-                //       student.AddGrade(3.5);
-                //       break;
-                //       case "4+":
-                //       student.AddGrade(4.5);
-                //       break;
-                //       case "5+":
-                //       student.AddGrade(5.5);
-                //       break;
-                //       case "2-":
-                //       student.AddGrade(1.75);
-                //       break;
-                //       case "3-":
-                //       student.AddGrade(2.75);
-                //       break;
-                //       case "4-":
-                //       student.AddGrade(3.75);
-                //       break;
-                //       case "5-":
-                //       student.AddGrade(4.75);
-                //       break;
-                //       case "6-":
-                //       student.AddGrade(5.75);
-                //       break;
-
-                //       default:
-                //        var grade = double.Parse(input);
-                //       student.AddGrade(grade);
-                //       //case "q":
-                      
-                //       break;
-
-                              
-                 if (input == "9")
+                string input = Console.ReadLine();
+                 if (input == "q")
                  {
                     break;
                  }
-
+                  student.AddGrade(input);
+                              
+                
               
             }              
                var stat = student.GetStatistic();

@@ -23,22 +23,24 @@ namespace SchoolRegisterApp
         // }
         public string Name { get; set; }
               
-        public void AddGrade(double grade)
-        {
+        // public void AddGrade(double grade)
+        // {
            
-            if (grade >= 1.0 && grade <= 6.0)
-            {
+        //     if (grade >= 1.0 && grade <= 6.0)
+        //     {
               
-            this.gradesList.Add(grade);
+        //     this.gradesList.Add(grade);
               
-            }
-        else
-            {
-               Console.WriteLine("Wrong grade"); 
-            }
-        }        
+        //     }
+        // else
+        //     {
+        //        Console.WriteLine("Wrong grade"); 
+        //     }
+        // }        
          public void AddGrade(string grade)
         {
+             
+            
              switch(grade)
                  {
                       case "1+":
@@ -73,14 +75,32 @@ namespace SchoolRegisterApp
                       break;
 
                       default:
+                     try{
                       var Sgrade = double.Parse(grade);
+                      if (Sgrade <= 9 && Sgrade >= 1)
+                      {
                       this.gradesList.Add(Sgrade); 
-                      break;      
+                         }
+                      else
+                        {
+                        throw new ArgumentException($"Invalid argument: {nameof(grade)}");
+                        }
+                     }
+                     catch(ArgumentException ex)
+                     {
+                        Console.WriteLine($"Argument{ex.Message}");
+                     }
+                     catch(FormatException ex)
+                     {
+                        Console.WriteLine(ex.Message);
+                     }
+                      break;   
 
-           // int result;
-          //  int.TryParse(Sgrade, out result);
-            
-        }
+                     }
+                        
+       
+          
+        
         }
 
         public void ChangeName(ref Student student, string name)
