@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace SchoolRegisterApp
 {
-    public class Student
+    public class Student : NameObject
 
     { 
       public delegate void GradeAddedDelegate(object sender, EventArgs args);
@@ -16,37 +16,9 @@ namespace SchoolRegisterApp
         {
             this.Name = name; // słowo this aby odwołać sie do klasy i przypisac name z konstruktora (to co w nawiasie) do pola name
         }
-
-        // public string Name
-        // {
-        //     get
-        //     {
-        //         return this.name;
-        //     }
-        // }
-        public string Name { get; set; }
-              
-        // public void AddGrade(double grade)
-        // {
-           
-        //     if (grade >= 1.0 && grade <= 6.0)
-        //     {
-              
-        //     this.gradesList.Add(grade);
-              
-        //     }
-        // else
-        //     {
-        //        Console.WriteLine("Wrong grade"); 
-        //     }
-        // }        
+       
          public void AddGrade(string grade)
         {      
-         // if (GradeAdded != null && grade <=3)
-         // {
-         //    GradeAdded(this, new EventArgs());
-         // }
-             
             
              switch(grade)
                  {

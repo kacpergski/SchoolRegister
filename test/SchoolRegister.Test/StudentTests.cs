@@ -2,7 +2,7 @@ using SchoolRegisterApp;
 namespace SchoolRegister.Test;
 
 
-public class StudentTests
+public class StudentTests 
 {
     [Fact]
     public void Test1()

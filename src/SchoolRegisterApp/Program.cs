@@ -9,7 +9,7 @@ using System.Collections.Generic;
 namespace SchoolRegisterApp
 //dzień 5
 {
-    class Program
+    partial class Program
     {
         static void Main(string[] args)
         {
