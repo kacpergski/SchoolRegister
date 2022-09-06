@@ -4,8 +4,11 @@ using System.Collections.Generic;
 namespace SchoolRegisterApp
 {
     public class Student
+
     { 
-        //private string name;  //pole prywatne do przechowywania imion
+      public delegate void GradeAddedDelegate(object sender, EventArgs args);
+      public event GradeAddedDelegate GradeAdded;
+        private string name;  //pole prywatne do przechowywania imion
         private List<double> gradesList = new List<double>(){};
         
 
@@ -38,15 +41,27 @@ namespace SchoolRegisterApp
         //     }
         // }        
          public void AddGrade(string grade)
-        {
+        {      
+         // if (GradeAdded != null && grade <=3)
+         // {
+         //    GradeAdded(this, new EventArgs());
+         // }
              
             
              switch(grade)
                  {
                       case "1+":
+                        if (GradeAdded != null )
+                        {
+                          GradeAdded(this, new EventArgs());
+                        }
                       this.gradesList.Add(1.5);
                       break;
                       case "2+":
+                       if (GradeAdded != null )
+                        {
+                          GradeAdded(this, new EventArgs());
+                        }
                       this.gradesList.Add(2.5);
                       break;
                       case "3+":
@@ -59,9 +74,17 @@ namespace SchoolRegisterApp
                       this.gradesList.Add(5.5);
                       break;
                       case "2-":
+                       if (GradeAdded != null )
+                        {
+                          GradeAdded(this, new EventArgs());
+                        }
                       this.gradesList.Add(1.75);
                       break;
                       case "3-":
+                       if (GradeAdded != null )
+                        {
+                          GradeAdded(this, new EventArgs());
+                        }
                       this.gradesList.Add(2.75);
                       break;
                       case "4-":
@@ -72,13 +95,18 @@ namespace SchoolRegisterApp
                       break;
                       case "6-":
                       this.gradesList.Add(5.75);
-                      break;
+                      break; // dodac return wartość i dopiero ten return dodawac do gradelist wtedy mozna skrócic i dodawac nowe funkcje
 
                       default:
                      try{
                       var Sgrade = double.Parse(grade);
                       if (Sgrade <= 9 && Sgrade >= 1)
                       {
+                        if (GradeAdded != null && Sgrade <=3)
+                                 {
+                                    GradeAdded(this, new EventArgs());
+                                 }
+
                       this.gradesList.Add(Sgrade); 
                          }
                       else

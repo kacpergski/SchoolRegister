@@ -14,6 +14,7 @@ namespace SchoolRegisterApp
         static void Main(string[] args)
         {
             var student = new Student("Kacper");
+            student.GradeAdded += OnGradeadded;
             while (true)
             {
                  Console.WriteLine($"Input 9 for exit");
@@ -28,7 +29,12 @@ namespace SchoolRegisterApp
                               
                 
               
-            }              
+            }   
+            static void OnGradeadded(object sender, EventArgs args)
+            {
+              Console.WriteLine("Oh no! We should inform student’s parents about this fact");
+            }
+
                var stat = student.GetStatistic();
                Console.WriteLine($"Minimal garde: {stat.minGrade:N2}");
                Console.WriteLine($"Maximal grade: {stat.maxGrade:N2}");
@@ -67,7 +73,7 @@ namespace SchoolRegisterApp
           //      Console.WriteLine($"{nameList[i]} {ageList[i]}"); 
           //  }
 
-
+        
 
      
         }   
