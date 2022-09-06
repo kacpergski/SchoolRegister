@@ -12,7 +12,7 @@ namespace SchoolRegisterApp
         private List<double> gradesList = new List<double>(){};
         
 
-        public Student(string name)
+        public Student(string name) : base(name)
         {
             this.Name = name; // słowo this aby odwołać sie do klasy i przypisac name z konstruktora (to co w nawiasie) do pola name
         }
