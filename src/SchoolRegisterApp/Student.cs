@@ -96,10 +96,7 @@ namespace SchoolRegisterApp
                      }
                       break;   
 
-                     }
-                        
-       
-          
+                }
         
         }
 
