@@ -12,7 +12,7 @@ namespace SchoolRegisterApp
             student.GradeAdded += OnGradeadded;
             while (true)
             {
-                 Console.WriteLine($"Input 9 for exit");
+                 Console.WriteLine($"Input q for exit");
                  Console.WriteLine($"Hello enter grade for {student.Name}");
                               
                 string input = Console.ReadLine();

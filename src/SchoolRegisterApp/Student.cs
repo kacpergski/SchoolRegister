@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace SchoolRegisterApp
 {
-    public class Student : NameObject
+    public class Student : StudentBase
 
     { 
       public delegate void GradeAddedDelegate(object sender, EventArgs args);
@@ -16,8 +16,9 @@ namespace SchoolRegisterApp
         {
             this.Name = name; // słowo this aby odwołać sie do klasy i przypisac name z konstruktora (to co w nawiasie) do pola name
         }
-       
-         public void AddGrade(string grade)
+
+
+        public override void AddGrade(string grade)
         {      
             
              switch(grade)
@@ -72,7 +73,7 @@ namespace SchoolRegisterApp
                       default:
                      try{
                       var Sgrade = double.Parse(grade);
-                      if (Sgrade <= 9 && Sgrade >= 1)
+                      if (Sgrade <= 6 && Sgrade >= 1)
                       {
                         if (GradeAdded != null && Sgrade <=3)
                                  {
@@ -118,19 +119,7 @@ namespace SchoolRegisterApp
          student.Name = name;
         }
 
-
        
-   
-
-        
-
-          
-              
-            
-      
-        
-    
-    
       
 
         public Statistic GetStatistic()
