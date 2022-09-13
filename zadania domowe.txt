@@ -1,0 +1,95 @@
+dzien 6 
+
+Przygotuj jedną główną klasę z Twojego projektu, na której będzie opierał się Twój program (n. Employee, Student, Book, Person, Customer, Photo, Film etc)
+Dodaj konstruktor Student(name) z parametrem (chyba że realizujesz inny projekt niż dziennik ocen ucznia)
+Dodaj pierwszą metodę do interakcji z Twoją klasą (np. AddGrade(..), AddPrice(…), AddTrack(…). RemoveHistory(…), etc
+Kod swojej pierwszej klasy opublikuj na grupie
+W razie problemów pisz na grupie
+
+Dzien 7
+
+Przygotuj swój projekt główny oraz testowy dla Twojej własnej aplikacji z odpowiednią nazwą
+W projekcie testowym dodaj referencje do projektu głównego (nigdy odwrotnie)
+Napisz kilka testów dla swojej metody GetStatistics() i uruchom go z użyciem dotnet test
+NIEOBOWIĄZKOWE* (poza zakresem nagrań z kursu): przygotuj testy w oparciu o nunit i uruchom je z pomocą runnera z https://marketplace.visualstudio.com/items?itemName=wghats.vscode-nxunit-test-adapter
+TUTORIAL (ENG): https://www.codemag.com/Article/2009101/Interactive-Unit-Testing-with-.NET-Core-and-VS-Code
+
+
+dzień 8
+Przygotuj swoją własną solucję z projektem głównym i testowym
+Zbuduj kilka projektów jednocześnie z użyciem solucji
+Uruchom wszystkie testy z poziomu solucji
+Napisz testy z lekcji dotyczące porównania referencji Twoje własnej klasy z użyciem Same, NotSame, Object.ReferenceEquals oraz extension method .Equals() (np. employee.Equals(…);)
+
+dzien 9
+Napisz metodę AddGrade(string), w której użyjesz int.TryParse()
+– np. int.TryParse(s, out result); i jeżeli wartość może być sparsowana ze stringa do liczby to dodaj tę wartość do tablicy ocen.
+W razie problemów pisz na grupie
+
+dzien 10
+Dopisz u siebie metodę, która może zmienić imię ucznia (chyba że realizujesz inny projekt niż dziennik ocen)
+Wewnątrz metody dodaj walidację, która sprawdzi, czy żadna litera w podanym stringu z imieniem nie jest cyfrą (wskazówka: wykorzystaj pętle foreach na stringu oraz metodę char.IsDigit(…);
+W razie problemów pisz na grupie
+
+dzien 11
+Przygotuj dwie tablice 10 elementowe – pierwsza z imionami osób, a druga z liczbą lat (to zadanie nie musi znaleźć się w aplikacji do certyfikacji)
+Napisz pętle for w której połączysz każdą kolejną osobę z wiekiem z drugiej tablicy i wynik wyświetlisz na ekranie, czyli np dla 3 elementowej tablicy:
+{„Adam”, „Jan”, „Tomasz”} i {27, 29, 36}
+wynik:
+Adam 27
+Jan 29
+Tomasz 36
+To zadanie nie musi znaleźć się w aplikacji do certyfikacji (pętla for jeszcze wróci w zadaniach domowych)
+W razie problemów pisz na grupie
+
+dzien 12
+Używając switcha dodaj w swojej aplikacji możliwość wprowadzenia ocen z plusami, czyli np. 3+, 4+ etc i potraktuj je jako liczby zmiennoprzecinkowe, takie jak 3.5 lub 4.5 etc
+Dodaj metodę AddGrade, która pozwoli przyjąć stringa w postaci np. „3+”
+Wprowadź walidację stringa, który przyjmuje tylko cyfry od 1 do 6 oraz 1+,2+,3+,4+,5+
+Jeżeli warunki nie są spełnione rzuć ArgumentException z odpowiednim parametrem
+ZADANIE DODATKOWE: wprowadź obsługę ocen z minusem i potraktuj jest jako końcówka .75, czyli np. '5-’ to 4.75
+
+dzien 13
+Wszystkie cechy ucznia, które powinny być publiczne wystaw w postaci getter’ów i setter’ów. Przypilnuj, które z nich powinny mieć publiczny 'seter’
+Upewnij się, że Twoja aplikacja zawiera wszystkie dotychczasowe zadania domowe.
+W razie pytań pisz na grupie
+
+dzien 14
+Nazwij i napisz obsługę zdarzenia, które przy każdym dodaniu oceny poniżej 3 wyświetli informacje: „Oh no! We should inform student’s parents about this fact”
+W razie pytań pisz na grupie
+
+dzien 15
+Przygotuj klasę bazową dla klasy Student (lub innej jeżeli realizujesz inny projekt), która zawiera wszystkie wspólne cechy
+W razie pytań pisz na grupie
+
+dzien 16
+
+Przygotuj interface i klasę abstrakcyjną zastosowane w jednej klasie bazowej StudentBase. Postaraj się maksymalnie wykorzystać potencjał polimorfizmu i hermetyzacji korzystając z omówionych zasad.
+Pochwal się swoim rozwiązaniem na grupie
+W razie pytań pisz na grupie
+
+dzien 17
+Zrób dwie implementacje Twojej bazowej klasy StudentBase (pierwsza będzie przechowywać dane w pamięci, a druga w pliku)
+W klasie operującej na pliku stwórz zmienną const z nazwą pliku, w której przechowujesz nazwę pliku i używaj jej w podczas wywołania operacji na tym pliku
+W implementacji z obsługą pliku dodaj automatyczny zapis do drugiego pliku audytowego „audit.txt”, w którym oprócz ocen dodasz w każdej linii datę i godzinę ich wprowadzenia (użyj DateTime.UtcNow)
+
+dzien 18
+Zrób refactoring Twojego projektu tak, aby spełniał on wszystkie wymagania programowania obiektowego (szczególną uwagę zwróć na hermetyzację i polimorfizm)
+W razie wątpliwości pytaj na grupie
+
+dzien 19
+Jeżeli pracujesz na windowsie zdejmij Visual Studio 2019 w wersji Community (darmowa) z https://visualstudio.microsoft.com/pl/vs/
+Zainstaluj i uruchom swój dotychczasowy projekt
+W razie problemów pytaj na grupie
+
+ dzien 20
+Niezależnie od tego czy masz możliwość wzięcia udziału w certyfikacji przygotuj cały swój projekt zgodnie z wymaganiami z lekcji i opublikuj w serwisie https://github.com/ (jeżeli nie masz to załóż konto)
+Jeżeli masz problem z obsługą gita, skorzystaj z https://desktop.github.com/, stwórz nowe repozytorium i zrób commit
+W razie problemów z publikacją programu napisz na grupie, a pomogę
+Weź udział w Certyfikacji!
+
+dzien 21
+
+referncja wskazuje miejsce w pamieci stworzenie obiektu nowego obiektu czy tez podmienienie z tą samą referencją wskarze nowe miejsce w pamieci dla tej referencji o tej samej nazwie
+
+
